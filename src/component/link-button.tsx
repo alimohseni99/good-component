@@ -1,5 +1,6 @@
 import { SiLinkedin, SiGithub } from "react-icons/si";
 type SocialMedia = "Linkedin" | "GitHub";
+import "./link-button.css";
 
 type LinkProps = {
   url: string;
@@ -23,7 +24,7 @@ export const LinkButton = ({ url, name }: LinkProps) => {
       <button className="link-button">
         <a href={url}>
           {name}
-          {Icon && <Icon style={{ marginLeft: "8px" }} />}
+          {Icon && <Icon style={{ marginLeft: "9px" }} />}
         </a>
       </button>
     </div>
