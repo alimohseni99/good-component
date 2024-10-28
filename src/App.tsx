@@ -1,6 +1,5 @@
 import "./App.css";
 import { LinkButton } from "./component/link-button";
-import { SiLinkedin } from "react-icons/si";
 
 function App() {
   return (
@@ -9,7 +8,6 @@ function App() {
       <LinkButton
         url={"https://www.linkedin.com/notifications/?filter=all"}
         name={"Linkedin"}
-        icon={SiLinkedin}
       />
     </>
   );

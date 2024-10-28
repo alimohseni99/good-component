@@ -1,18 +1,15 @@
-import React from "react";
-import type { IconType } from "react-icons";
 type LinkProps = {
   url: string;
   name: string;
-  icon: IconType;
 };
-export const LinkButton = ({ url, name, icon }: LinkProps) => {
+type SocialMedia = "Linkedin" | "GitHub";
+
+
+export const LinkButton = ({ url, name }: LinkProps) => {
   return (
     <div>
       <button className="link-button">
-        <a href={url}>
-          {name}
-          {React.createElement(icon)}
-        </a>
+        <a href={url}>{name}</a>
       </button>
     </div>
   );
