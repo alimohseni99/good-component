@@ -8,7 +8,6 @@ function App() {
         url={"https://www.linkedin.com/notifications/?filter=all"}
         name={"Linkedin"}
       />
-    
     </>
   );
 }
