@@ -1,19 +1,11 @@
 import "./App.css";
-import { LinkButton } from "./component/link-button";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
     <>
-      <h3>Visit My Links</h3>
-      <div className="buttons">
-        <LinkButton
-          url={"https://www.linkedin.com/notifications/?filter=all"}
-          name={"Linkedin"}
-        />
-        <LinkButton
-          url={"https://www.linkedin.com/notifications/?filter=all"}
-          name={"GitHub"}
-        />
+      <div className="container">
+        <Footer />
       </div>
     </>
   );

@@ -1,30 +1,28 @@
 import { SiLinkedin, SiGithub } from "react-icons/si";
-type SocialMedia = "Linkedin" | "GitHub";
+import { RxAvatar } from "react-icons/rx";
 import "./link-button.css";
 
+type SocialMedia = "Linkedin" | "GitHub";
 type LinkProps = {
   url: string;
   name: SocialMedia;
 };
 
 export const LinkButton = ({ url, name }: LinkProps) => {
-  let Icon = null;
+  let Icon = RxAvatar;
 
   if (name === "Linkedin") {
     Icon = SiLinkedin;
   } else if (name === "GitHub") {
     Icon = SiGithub;
-  } else {
-    console.log("Unkown name");
-    return null;
   }
 
   return (
     <div>
-      <button className="link-button">
-        <a href={url}>
+      <button>
+        <a href={url} target="_blank" className="link-button">
           {name}
-          {Icon && <Icon style={{ marginLeft: "9px" }} />}
+          <Icon style={{ marginLeft: "9px" }} />
         </a>
       </button>
     </div>

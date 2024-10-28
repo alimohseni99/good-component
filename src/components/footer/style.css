@@ -1,0 +1,14 @@
+.footer-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 15rem;
+}
+.footer {
+  background-color: #848891;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}

@@ -1,5 +1,6 @@
-.link-button a {
+.link-button {
   display: flex;
   align-items: center;
   padding: 1rem;
+  text-decoration: none;
 }
