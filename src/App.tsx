@@ -1,8 +1,16 @@
 import "./App.css";
+import { LinksButton } from "./component/LinksButton";
 
 function App() {
-
-  return <h1>Hello World!</h1>;
+  return (
+    <>
+      <LinksButton
+        url={"https://www.linkedin.com/notifications/?filter=all"}
+        name={"Linkedin"}
+      />
+    
+    </>
+  );
 }
 
 export default App;
